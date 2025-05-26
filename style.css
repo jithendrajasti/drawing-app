@@ -1,0 +1,125 @@
+/* style.css */
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(/drawingapp/body_background.jpg) ;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+h1 {
+  color: rgb(245, 245, 69);
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Toolbar Styling */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.divchild {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+button.divchild {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.divchild:hover {
+  background-color: #45a049;
+}
+
+button#eraserBtn.active {
+  background-color: #f44336;
+}
+
+/* Canvas Styling */
+canvas {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+   cursor: url('/drawingapp/canvas_cursor.svg') 12 12, auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .divchild {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button.divchild {
+    width: 100%;
+    text-align: center;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .toolbar {
+    gap: 10px;
+    padding: 8px;
+  }
+
+  button.divchild {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+
+
+
