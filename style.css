@@ -10,7 +10,7 @@
 /* Body Styling */
 body {
   font-family: Arial, sans-serif;
-  background-image: url(/drawingapp/body_background.jpg) ;
+  background-image: url(/body_background.jpg) ;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ canvas {
   max-width: 100%;
   height: auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-   cursor: url('/drawingapp/canvas_cursor.svg') 12 12, auto;
+   cursor: url('/canvas_cursor.svg') 12 12, auto;
 }
 
 /* Responsive Design */
@@ -120,6 +120,7 @@ canvas {
     font-size: 1.25rem;
   }
 }
+
 
 
 
